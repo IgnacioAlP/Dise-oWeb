@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./agenda.css">
+    <title>Agenda</title>
+</head>
+<body>
+    <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+        <label for="movil">Num Celular</label>
+        <input type="text" name="movil" id="movil">
+
+        <input type="button" onclick="guardardatos()" value="Guardar Datos">
+        <p id="datos">Pulsa para ver tu nombre y número de Celular</p>
+        <input type="button" onclick="recuperardatos()" value="Recuperar Datos ">
+    </div>
+
+
+    <script src="./agenda.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+body{
+    margin: opx;
+}
+header{
+    background-color: rgb(223, 219, 10);
+    height: 80px;
+}
+nav{
+    background-color: rgb(4, 5, 1);
+    width: 25%;
+}
+section{
+    background-color: rgb(165, 154, 149);
+    width: 75%;
+}
+footer{
+    background-color: brown;
+    height: 80px;
+    clear: left;
+}
+nav,section{
+    float: left;
+    height: 630px;
+}
+#encabezado{
+    margin-top: 0px;
+}
+li{
+    background-color: aqua;
+    list-style: none;
+    padding-left: 20px;
+    border: 1px solid green;
+}
+ul{
+    padding-left: 0px;
+}

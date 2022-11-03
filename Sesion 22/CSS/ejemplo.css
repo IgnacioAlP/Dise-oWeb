@@ -1,0 +1,33 @@
+p::first-letter{
+    font-size: 2rem;
+}
+
+.pseudoele{
+    border: 2px solid black;
+    width: 10%;
+    text-align: center;
+}
+/*Pesuoelementos*/
+.pseudoele::before{
+    content: 'Hola';
+    background-color: red;
+}
+.pseudoele::after{
+    content: 'Hola';
+    background-color: red;
+}
+/*Pesudoclase*/
+
+.pseudoclase:hover{
+    background-color: lemonchiffon;
+}
+
+.a:hover{
+    background-color: lemonchiffon;
+}
+.a:focus{
+    color: green;
+}
+.a:active{
+    color: blueviolet;
+}

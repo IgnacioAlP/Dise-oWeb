@@ -1,0 +1,17 @@
+body{
+    overflow: hidden;
+}
+p{
+    animation-duration: 3s;
+    animation-name: slideim;
+}
+@keyframes slideim {
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,28 @@
+/*.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+.a,.b,.c,.d{
+    border: 1px solid black;
+}
+.a{
+    background-color: blueviolet;
+}
+.b{
+    background-color: coral;
+}
+.c{
+    background-color: cornflowerblue;
+}
+.d{
+    background-color: darkgoldenrod;
+}*/
+
+.grid{
+    display: grid;
+    grid-template-areas: "head head"
+    "menu main"
+    "foot foot";
+}
+.a{grind-are}

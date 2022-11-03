@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script type="text/javascript" src="miPrograma.js"></script>
+</head>
+<body>
+    <h1>Segundo programa JavaScript</h1>
+    <h2>
+
+        <p id="sumar"></p>
+
+    </h2>
+    <script>
+        compara();
+        resta(50,30)
+        suma(50,30)
+    </script>
+    <h2>Escribe un texto en la caja</h2>
+    <input id="entrada" onkeyup="escribir()">
+    <div id="contenido"></div>
+
+    <form name="selectForm" >
+        <p>
+          <label for="musicTypes">Elija algunos tipos de música, luego haga clic en el botón de abajo:</label>
+          <select id="musicTypes" name="musicTypes" multiple="multiple">
+            <option selected="selected">R&B</option>
+            <option>Jazz</option>
+            <option>Blues</option>
+            <option>New Age</option>
+            <option>Classical</option>
+            <option>Opera</option>
+          </select>
+        </p>
+        <p><input id="btn" type="button" value="¿Cuántos están seleccionados?" /></p>
+      </form>
+      <script>
+        function howMany(selectObject) {
+          let numberSelected = 0;
+          for (let i = 0; i < selectObject.options.length; i++) {
+            if (selectObject.options[i].selected) {
+              numberSelected++;
+            }
+          }
+          return numberSelected;
+        }
+        
+        let btn = document.getElementById('btn');
+        btn.addEventListener('click', function() {
+          alert('Número de opciones seleccionadas: ' + howMany(document.selectForm.musicTypes));
+        });
+        </script>
+</body>
+</html>
