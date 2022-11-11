@@ -1,0 +1,9 @@
+.contededor{
+    background-color: cornsilk;
+}
+div{
+    border: 1px solid black;
+    background-color: cornsilk;
+    color: black;
+    margin-top: 10px;
+}

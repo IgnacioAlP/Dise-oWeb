@@ -1,0 +1,25 @@
+header{
+    background-color: blueviolet;
+    height: 150px;
+}
+nav{
+    background-color: cornflowerblue;
+    height: 50px;
+}
+section{
+    background-color: cornsilk;
+    height: 300px;
+}
+aside{
+    background-color: skyblue;
+    height: 50px;
+}
+footer{
+    background-color: aliceblue;
+    height: 100px;
+}
+@media (min-width: 768px) {
+    nav, section, aside{
+        height: 450px;
+    }
+}
