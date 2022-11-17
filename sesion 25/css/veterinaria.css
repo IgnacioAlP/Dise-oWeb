@@ -1,0 +1,57 @@
+
+html,
+body {
+    height: 100%;
+}
+
+#cover {
+    background: #222 url(../img/perro-pide-comida.jpg) center no-repeat;
+    background-size: 100%;
+    color: rgb(19, 18, 18);
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#cover-texto {
+    width: 100%;
+}
+nav{
+    background-color: #0dcaf0;
+}
+section{
+    grid-area: my-section;
+}
+aside{
+    grid-area: my-aside;
+}
+.grid{
+    margin: 0PX auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 50px 1fr 100px 50px;
+    grid-template-areas:"my-section" "my-aside" "";
+}
+@media (min-width: 600px) and (max-width: 1000px){
+    .grid{
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 150px 50px 1fr 100px;
+        grid-template-areas:"my-section my-aside";
+    }
+    
+}
+@media(min-width: 1001px){
+    .grid{
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 150px 50px 1fr 100px;
+        grid-template-areas:"my-section my-aside";
+    }
+}
+.texto{
+    margin-top: 20px;
+}
+.card-group{
+    margin-top: 20px;
+}
