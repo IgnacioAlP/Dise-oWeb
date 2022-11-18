@@ -1,0 +1,55 @@
+#contenedor{
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+header {
+    background-color: red;
+    color: white;
+}
+
+
+nav{
+    background-color: black; 
+    text-align: right;
+}
+
+nav a{
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+aside{
+    
+    border: s;
+}
+
+h1{
+    margin: auto;
+    height: auto;
+    color: white;
+}
+
+#foto{
+    float: left;
+}
+
+#foto img{
+    height: 150px;
+    width: 150px;
+}
+
+#inicio{
+    margin: 10px;
+    padding: 10px;
+    float: right;
+    height: auto;
+    width: auto;
+}
+
+#titulo{
+    font-size: 9vw;
+    font-family: 'Times New Roman', Times, serif
+}
+
