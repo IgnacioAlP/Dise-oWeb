@@ -4,32 +4,32 @@ window.onload = function () {
         id: 1,
         nombre: 'Cemento Cemex',
         precio: 48,
-        imagen:"img/cemento.pgp"
+        imagen:"img/cemento.jpeg"
     },{
         id: 2,
         nombre: 'Clavos de 5´',
         precio: 10,
-        imagen:"img/clavo.jpg"
+        imagen:"img/clavo.jpeg"
     },{
         id: 3,
         nombre: 'Interruptores',
         precio: 12,
-        imagen:"img/interruptor.jpg"
+        imagen:"img/interruptor.jpeg"
     },{
         id: 4,
         nombre: 'Foco - Home light',
         precio: 15.99,
-        imagen:"img/foco.jpg"
+        imagen:"img/foco.jpeg"
     },{
         id: 5,
         nombre: 'Serrucho Trupers ',
         precio: 18,
-        imagen:"img/cerrucho.jpg"
+        imagen:"img/cerrucho.jpeg"
     },{
         id: 6,
         nombre: 'Calamina pavk',
         precio: 25,
-        imagen:"img/calamina.jpg"
+        imagen:"img/calamina.jpeg"
     }
 ];
     
