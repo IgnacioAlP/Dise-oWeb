@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/bootstrap.min.css">
     <link rel="stylesheet" href="Css/proyectos.css">
-    <link rel="shortcut icon" href="./img/FERRETERIA.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/LogoPrincipal.png" type="image/x-icon">
     <title>PROYECTOS</title>
 </head>
 
@@ -16,10 +16,10 @@
     <main id="contenedor" class="container">
         <div class="row">
             <nav class="col-md-12 con-sd-12">
-                <a href="index.html">Inicio</a>
-                <a href="productos.html">Productos</a>
-                <a href="proyectos.html" class="active">Proyectos</a>
-                <a href="Compras.html" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Compras</a>
+                <a href="./index.html" href="">Inicio</a>
+                <a href="./productos.html">Productos</a>
+                <a class="active">Proyectos</a>
+                <a href="./compras.html" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Compras</a>
                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -31,11 +31,10 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <!-- Imagen y texto -->
 
                                 <div class="d-flex align-items-center">
                                     <div class="flex-shrink-0">
-                                        <img src="./img/FERRETERIA.png" alt="Producto"
+                                        <img src="./img/LogoPrincipal.png" alt="Producto"
                                             style="width: 100px; height: 100px;">
                                     </div>
                                     <div class="flex-grow-1 ms-3">
@@ -48,20 +47,31 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <a type="button" class="btn btn-primary" href="Compras.html">Ir a la tienda</a>
+                                <a type="button" class="btn btn-primary" href="./compras.html">Ir a la tienda</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="nosotros.html">Nosotros</a>
+                <a href="./nosotros.html">Nosotros</a>
             </nav>
             <header class="conteiner-fluid">
                 <div id="foto">
-                    <img src="./img/FERRETERIA.png" alt="Farmacia BV">
+                    <img class="logoprincipal" src="./img/LogoPrincipal.png" alt="Ferreteria Clavito">
                 </div>
+                <!-- barra de navegacion -->
+                <nav id="form" class="navbar navbar-light" style="background-color: red;">
+                    <form class="form-inline">
+                        <input id="barra" class="form-control mr-sm-2" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button id="botonbarra" class="btn btn-outline-success my-2 my-sm-0"
+                            type="submit">Search</button>
+                    </form>
+                </nav>
+                <!-- fin de barra de navegacion -->
                 <div id="inicio">
-                    <button type="button" class="btn btn-primary btn-floating btn-light btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop"><i class="fas fa-shopping-cart"></i></button>
+                    <button id="botoncarrito" type="button" class="btn btn-primary btn-floating btn-light btn-lg"
+                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <i class="fas fa-shopping-cart"></i></button>
                     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
                         tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -74,83 +84,130 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <!-- Imagen y texto -->
 
                                     <div class="d-flex align-items-center">
                                         <div class="flex-shrink-0">
-                                            <img src="./img/FERRETERIA.png" alt="Producto"
+                                            <img src="./img/LogoPrincipal.png" alt="Producto"
                                                 style="width: 100px; height: 100px;">
                                         </div>
                                         <div class="flex-grow-1 ms-3">
                                             <p style="color: black; text-align: justify;">Ferreteria Clavito te da la
                                                 Bienvenida.
                                                 Aprovecha nuestras increíbles
-                                                ofertas por BlackFriday.</p>
+                                                ofertas por BlackFriday.
+                                            </p>
                                         </div>
                                     </div>
 
                                 </div>
                                 <div class="modal-footer">
-                                    <!-- Link de redirección a la página de compras -->
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Cerrar</button>
-                                    <a type="button" class="btn btn-primary" href="Compras.html">Ir a la
+                                    <a type="button" class="btn btn-primary" href="./compras.html">Ir a la
                                         tienda</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fas fa-user"></i></a>
+                    <!-- USEER -->
+                    <div class="profile-menu">
+                        <div class="action">
+                            <img src="img/profile.png" />
+                        </div>
+                        <div class="menu">
+                            <div class="profile">
+                                <img src="img/profile.png" />
+                                <div class="info">
+                                    <h2>Lucio Fernandez</h2>
+                                    <p>@lufz</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn">
+                                <img src="img/plus.png" />
+                                Add profile
+                            </a>
+                            <ul>
+                                <li>
+                                    <img src="img/edit.png" />
+                                    <a href="#">Edit profile</a>
+                                </li>
+                                <li>
+                                    <img src="img/setting.png" />
+                                    <a href="#">App setting</a>
+                                </li>
+                                <li>
+                                    <img src="img/user.png" />
+                                    <a href="#">Account</a>
+                                </li>
+                                <li>
+                                    <img src="img/help.png" />
+                                    <a href="#">Help</a>
+                                </li>
+                                <li>
+                                    <img src="img/logout.png" />
+                                    <a href="#">Log out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- FIN USER -->
+
                 </div>
                 <br>
-                <h1 id="titulo" class="text-left">Ferreteria Clavito</h1>
             </header>
         </div>
 
         <div class="row">
-            <section style="background-color:#691c1c" ; class="col-md-6 col-sm-12">
-                <div id="ftproyectos"><br><br>
-                    <br><br> <img id="ftpry" src="./img/proyecto.jpg" alt="">
-                </div>
+            <section class="col-md-12 col-sm-12">
+
+        
+                <aside class="col-md-6" ;>
+                    <br>
+                    <h1 id="proyectos" style="color: rgb(0, 0, 0); text-align: center;"> <b>PROYECTOS</b> </h1><br>
+                    <div class="row  row-cols-1 row-cols-md-4 my-2 m-0 justify-content-around">
+                        <div class="card" style="width: 13rem; background-color: blanchedalmond;">
+                            <div class="inner">
+                                <img src="./img/1246943.png" class="card-img-top mt-2" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="text-align:center;"> <u>PROYECTO 1</u> </h5>
+                                <p class="card-text" style="text-align:center;">Agenda versión 03</p>
+                            </div>
+                            <div class="btn">
+                                <a href="./proyectos/Agenda V3/agendaV3.html" class="btn btn-dark">Ver proyecto</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 13rem; background-color: blanchedalmond;">
+                            <div class="inner">
+                                <img src="./img/fantasma.png" class="card-img-top mt-2" alt="...">
+
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-text" style="text-align:center;"> <u>PROYECTO 2</u> </h5>
+                                <p class="card-text" style="text-align:center;"> Animación Fantasma</p>
+                            </div>
+                            <div class="btn">
+                                <a href="#" class="btn btn-dark">Ver proyecto</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 13rem; background-color: blanchedalmond;">
+                            <div class="inner">
+                                <img src="./img/veterinaria.png" class="card-img-top mt-2" alt="...">
+
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-text" style="text-align:center;"> <u>PROYECTO 3</u> </h5>
+                                <p class="card-text" style="text-align:center;">Veterinaria</p>
+                            </div>
+                            <div class="btn">
+                                <a href="./proyectos/veterinaria/index.html" class="btn btn-dark">Ver proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
             </section>
 
-            <aside class="col-md-6" style="background-color:rgb(0, 0, 0)" ;>
-                <br>
-                <h1 id="proyectos" style="color: white;">PROYECTOS</h1><br>
-                <div class="row  row-cols-1 row-cols-md-4 my-2 m-0 justify-content-around">
-                    <div class="card" style="width: 13rem;">
-                        <img src="./img/1246943.png" class="card-img-top mt-2" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">PROYECTO 1</h5>
-                            <p class="card-text">Agenda versión 03</p>
-                        </div>
-                        <div class="btn">
-                            <a href="./proyectos/Agenda V3/agendaV3.html" class="btn btn-dark">Ver proyecto</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 13rem;">
-                        <img src="./img/fantasma.png" class="card-img-top mt-2" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">PROYECTO 2</h5>
-                            <p class="card-text"> Animación Fantasma</p>
-                        </div>
-                        <div class="btn">
-                            <a href="#" class="btn btn-dark">Ver proyecto</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 13rem;">
-                        <img src="./img/veterinaria.png" class="card-img-top mt-2" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">PROYECTO 3</h5>
-                            <p class="card-text">Veterinaria</p>
-                        </div>
-                        <div class="btn">
-                            <a href="./proyectos/veterinaria/index.html" class="btn btn-dark">Ver proyecto</a>
-                        </div>
-                    </div>
-                </div>
-            </aside>
         </div>
 
 
@@ -168,7 +225,7 @@
 
                             <!--Grid column-->
                             <div class="col-md-5 col-lg-4 col-xl-4 mx-auto mb-3">
-                                <h6 class="text-uppercase fw-bold mb-4">UBÍCANOS EN:</h6>
+                                <h6 id="ubitxt" class="text-uppercase fw-bold mb-4">UBÍCANOS EN:</h6>
                                 <p><i class="fas fa-home me-3"></i> Av. Francisco Cabrera 321 - Chiclayo</p>
                                 <p><i class="fas fa-envelope me-3"></i>
                                     FerretieraClavito@atcliente.com
@@ -178,31 +235,31 @@
                             <!--Grid column-->
 
                             <!--Grid column-->
-                            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                                <h6 class="text-uppercase fw-bold mb-4"> REDES SOCIALES:</h6>
+                            <div id="allredes" class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                <h6 id="redestxt" class="text-uppercase fw-bold mb-4"> REDES SOCIALES:</h6>
 
                                 <!-- Facebook -->
-                                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                                <a id="facebtn" class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
                                     <i class="fab fa-facebook-f"></i></a>
                                 <!-- Instagram -->
-                                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                                <a id="igbtn" class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
                                     <i class="fab fa-instagram"></i></a>
                                 <!-- Twitter -->
-                                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                                <a id="twbtn" class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
                                     <i class="fab fa-twitter"></i></a>
                                 <!-- Google + -->
-                                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                                <a id="ggbtn" class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
                                     <i class="fab fa-google"></i></a>
                             </div>
                             <!--Grid column-->
 
                             <!--Grid column-->
-                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-3">
-                                <h6 class="text-uppercase fw-bold mb-4">MAPA DE UBICACIÓN:</h6>
+                            <div id="allmapa" class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-3">
+                                <h6 id="mapatxt" class="text-uppercase fw-bold mb-4">MAPA DE UBICACIÓN:</h6>
                                 <table class="table text-center text-white">
                                     <tbody class="fw-normal">
                                         <tr>
-                                            <iframe
+                                            <iframe class="mapa"
                                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.9650211198837!2d-79.84267998565392!3d-6.774111968127418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904cef2885b35c73%3A0xe63453e9d705ac73!2sFrancisco%20Cabrera%20321%2C%20Chiclayo%2014001!5e0!3m2!1ses!2spe!4v1668718663503!5m2!1ses!2spe"
                                                 width="350" height="300" style="border:0;" allowfullscreen=""
                                                 loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -231,6 +288,10 @@
     <script src="https://kit.fontawesome.com/14fbf06638.js" crossorigin="anonymous"></script>
     <script src="Js/bootstrap.min.js"></script>
     <script src="Js/compras.js"></script>
+    <!-- jQuery CDN Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Custom js -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
