@@ -32,13 +32,13 @@ aside{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100px 50px 1fr 100px 50px;
-    grid-template-areas:"my-section" "my-aside" "";
+    grid-template-areas:"my-section" "my-aside""my-section my-aside";
 }
 @media (min-width: 600px) and (max-width: 1000px){
     .grid{
         grid-template-columns: 25% 75%;
         grid-template-rows: 150px 50px 1fr 100px;
-        grid-template-areas:"my-section my-aside";
+        grid-template-areas:"my-section my-aside""my-section my-aside";
     }
     
 }
@@ -46,7 +46,7 @@ aside{
     .grid{
         grid-template-columns: 25% 75%;
         grid-template-rows: 150px 50px 1fr 100px;
-        grid-template-areas:"my-section my-aside";
+        grid-template-areas:"my-section my-aside" "my-section my-aside";
     }
 }
 .texto{

@@ -1,0 +1,65 @@
+#foto img{
+    height: 200px;
+    width: 250px;
+}
+#busqueda{
+    position: relative;
+    right: 220px;
+    top: 90px;
+    width: 600px;
+}
+#botonbarra{
+    position: relative;
+    right: 120px;
+    top: 54px;    
+    border: 1px solid black;
+     color: black;
+     z-index: 3;
+}
+#form{
+    position: relative;
+    left: 400px;
+    width: 100px;
+}
+section{
+    grid-area: my-section;
+}
+aside{
+    grid-area: my-aside;
+}
+.grid{
+    margin: 0PX auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 50px 1fr 100px 50px;
+    grid-template-areas:"my-section" "my-aside" "";
+}
+@media (min-width: 600px) and (max-width: 1000px){
+    .grid{
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 150px 50px 1fr 100px;
+        grid-template-areas:"my-section my-aside";
+    }
+    
+}
+@media(min-width: 1001px){
+    .grid{
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 150px 50px 1fr 100px;
+        grid-template-areas:"my-section my-aside";
+    }
+}
+.texto{
+    margin-top: 20px;
+}
+.card-group{
+    width: 600px;
+    margin-left: 10px;
+    
+}
+.logoprincipal{
+    position: relative;
+    left: 150px;
+    top: 10px;
+}
